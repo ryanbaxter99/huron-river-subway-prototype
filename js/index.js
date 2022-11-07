@@ -20,3 +20,12 @@ const marker = new mapboxgl.Marker()
         <p>Paragraph two</p>
         `))
     .addTo(map);
+
+const marker2 = new mapboxgl.Marker()
+    .setLngLat([-84.4, 43.6])
+    .setPopup(new mapboxgl.Popup().setHTML(`
+        <p>Paragraph one</p>
+        <p>Paragraph two</p>
+        `))
+    .addTo(map);
+
