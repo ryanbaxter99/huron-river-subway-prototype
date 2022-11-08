@@ -1,12 +1,18 @@
 // accessToken taken from https://codepen.io/bradleyboy/pen/Yryybq
 mapboxgl.accessToken = "pk.eyJ1IjoiYnJhZGRhaWx5IiwiYSI6ImNqN21iam90ZzJ3MnEzM3F1anNkNWIydjMifQ.Dez6MhslaJs8ROSplWPSpQ";
 
+const bounds = [
+    [-90.168537, 41.765717], // Southwest coordinates
+    [-80.164952, 45.709707] // Northeast coordinates
+];
+
 const mapboxSettings = {
     container: "map", // targets this div ID
     style: "mapbox://styles/mapbox/streets-v11", // view with streets
-    center: [-84.7, 43.6], // [lg, lt] north of Lansing
-    zoom: 20, // approx the size of Michigan
-    projection: "globe", // display as a globe
+    center: [-83.7, 42.6], // [lg, lt] north of Lansing
+    zoom: 8, // approx the size of Michigan
+    maxBounds: bounds, // should set a maxbounds 
+    // projection: "globe", // display as a globe
     interactive: true, // disable user interaction
     // optionally, use bounds/maxBounds instead of disabling interactivity
 };
