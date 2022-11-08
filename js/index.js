@@ -81,4 +81,39 @@ const markers = [
     .setPopup(new mapboxgl.Popup().setHTML(`<p><b>Dam: </b>French Landing Dam</p>`)),
 ];
 
+const lineCoordinates = [
+    [-84, 42.3],        // southwest
+    [-83.85, 42.86],    // northwest
+    [-83.25, 42.81],    // northeast
+    [-83.36, 42.16],    // southeast
+    [-84, 42.3],        // back to start
+];
+
 markers.forEach(marker => marker.addTo(map));
+
+map.on('load', () => {
+    map.addSource('line', {
+        type: 'geojson',
+        data: {
+            type: 'Feature',
+            geometry: {
+                type: 'LineString',
+                coordinates: lineCoordinates
+            }
+        }
+    });
+
+    map.addLayer({
+        id: 'line',
+        type: 'line',
+        source: 'line',
+        layout: {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        paint: {
+            'line-color': '#000',
+            'line-width': 8
+        }
+    });
+});
