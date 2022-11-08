@@ -13,16 +13,16 @@ const mapboxSettings = {
 
 const map = new mapboxgl.Map(mapboxSettings);
 
-const marker = new mapboxgl.Marker()
-    .setLngLat([-84.7, 43.6])
+const bigLake = new mapboxgl.Marker()
+    .setLngLat([-83.51909881189316, 42.721293972977314])
     .setPopup(new mapboxgl.Popup().setHTML(`
         <p>Paragraph one</p>
         <p>Paragraph two</p>
         `))
     .addTo(map);
 
-const marker2 = new mapboxgl.Marker()
-    .setLngLat([-84.4, 43.6])
+const pontiacLake = new mapboxgl.Marker()
+    .setLngLat([-83.45, 42.66])
     .setPopup(new mapboxgl.Popup().setHTML(`
         <p>Paragraph one</p>
         <p>Paragraph two</p>
