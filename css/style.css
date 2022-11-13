@@ -21,3 +21,109 @@ body {
 .map-title {
     text-align: center;
 }
+
+/* Look into a marker class that each marker inherits from */
+
+.marker0 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker1 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker2 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker3 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker4 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker5 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker6 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker7 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker8 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker9 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker10 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker11 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.marker12 {
+    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
