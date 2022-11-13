@@ -1,9 +1,9 @@
 // accessToken taken from https://codepen.io/bradleyboy/pen/Yryybq
-mapboxgl.accessToken = "pk.eyJ1IjoiYnJhZGRhaWx5IiwiYSI6ImNqN21iam90ZzJ3MnEzM3F1anNkNWIydjMifQ.Dez6MhslaJs8ROSplWPSpQ";
+mapboxgl.accessToken = "pk.eyJ1IjoicnlhbmJheHRlcjk5IiwiYSI6ImNsYThlbm8wZDAyem0zb3BkZWo5OWdoa2sifQ.7ykBOLuBfbVar_kl3DsN5Q";
 
 const mapboxSettings = {
     container: "map", // targets this div ID
-    style: "mapbox://styles/mapbox/streets-v11", // view with streets
+    style: "mapbox://styles/ryanbaxter99/cla8h6cwb000n14n7evkecgvf", // view with streets
     center: [-83.7, 42.6], // [lg, lt] east of Lansing
     zoom: 8, // zoom covers central east Michigan
     maxBounds: [
@@ -180,7 +180,7 @@ map.on('load', () => {
             'line-cap': 'round'
         },
         paint: {
-            'line-color': '#000',
+            'line-color': '#FFF',
             'line-width': 4
         }
     });
