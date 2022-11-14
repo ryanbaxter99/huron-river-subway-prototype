@@ -22,108 +22,64 @@ body {
     text-align: center;
 }
 
-/* Look into a marker class that each marker inherits from */
-
-.bigLake {
+/* Each marker uses these generic rules */
+.marker {
     background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
     background-size: cover;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
+}
+
+/* Can specify CSS rules per lake to override the generic rules */
+.bigLake {
+
 }
 
 .pontiacLake {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
 
 .oxbowLake {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
 
 .cedarIslandLake {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
 
 .southCommerceLake {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
 
 .northCommerceLake {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
 
 .proudLake {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
 
 .hubbellPound {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
 
 .kentLake {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
 
 .baseLineLake {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
 
 .bartonPound {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
 
 .fordLake {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
 
 .bellevilleLake {
-    background-image: url("https://www.downloadclipart.net/large/24365-glossy-green-icon-button-design.png");
-    background-size: cover;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
+
 }
