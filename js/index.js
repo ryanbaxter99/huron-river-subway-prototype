@@ -15,6 +15,22 @@ const mapboxSettings = {
 
 const map = new mapboxgl.Map(mapboxSettings);
 
+const lakeNames = [
+    "bigLake", 
+    "pontiacLake", 
+    "oxbowLake", 
+    "cedarIslandLake",
+    "southCommerceLake",
+    "northCommerceLake",
+    "proudLake",
+    "hubbellPound",
+    "kentLake",
+    "baseLineLake",
+    "bartonPound",
+    "fordLake",
+    "bellevilleLake"
+]; 
+
 const markers = [
     // Big Lake
     new mapboxgl.Marker()
@@ -147,9 +163,10 @@ const markers = [
     `)),
 ];
 
+// This creates a map marker with a custom class name
 for (let i = 0; i < markers.length; i++) {
     const el = document.createElement('div');
-    el.className = 'marker' + i;
+    el.className = lakeNames[i];
     markers[i] = new mapboxgl.Marker(el)
         .setLngLat(markers[i].getLngLat())
         .setPopup(markers[i].getPopup())
