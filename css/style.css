@@ -33,7 +33,8 @@ body {
 
 /* Can specify CSS rules per lake to override the generic rules */
 .bigLake {
-
+    width: 40px;
+    height: 40px;
 }
 
 .pontiacLake {
