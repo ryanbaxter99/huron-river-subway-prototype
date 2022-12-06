@@ -148,10 +148,10 @@ const lakes = [
 ];
 
 // Adds a custom marker for each lake on the map
-lakes.forEach(lake => {
+const markers = lakes.map(lake => {
     const el = document.createElement('div');
     el.className = "marker " + lake.name;
-    new mapboxgl.Marker(el)
+    return new mapboxgl.Marker(el)
         .setLngLat([lake.lng, lake.lat])
         .setPopup(new mapboxgl.Popup().setHTML(lake.popup))
         .addTo(map);
@@ -186,8 +186,18 @@ const riverLines = [
     [-83.49774610909319, 42.213428101123355],
 ]
 
-// Runs on map load - adds the lines to the map
+map.on('zoom', () => {
+    markers.forEach(marker => {
+        const scale = 1 + (map.getZoom() - 8) * 0.4;
+        const element = marker.getElement().children[0];
+        element.style.transform = `scale(${scale})`
+        element.style.transformOrigin = 'bottom';
+    });
+});
+
+// Runs on map load
 map.on('load', () => {
+    // This layer draws the river lines
     map.addLayer({
         id: 'line',
         type: 'line',
