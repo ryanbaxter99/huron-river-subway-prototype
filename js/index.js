@@ -157,15 +157,6 @@ lakes.forEach(lake => {
         .addTo(map);
 });
 
-// Coordinates for the box around the lake points
-const lineCoordinates = [
-    [-84, 42.3],        // southwest
-    [-83.85, 42.86],    // northwest
-    [-83.25, 42.81],    // northeast
-    [-83.36, 42.16],    // southeast
-    [-84, 42.3],        // back to start
-];
-
 const riverLines = [
     // Starting point at Big Lake 
     [-83.51909881189316, 42.721293972977314], 
@@ -198,21 +189,19 @@ const riverLines = [
 
 // Runs on map load - adds the lines to the map
 map.on('load', () => {
-    map.addSource('line', {
-        type: 'geojson',
-        data: {
-            type: 'Feature',
-            geometry: {
-                type: 'LineString',
-                coordinates: riverLines
-            }
-        }
-    });
-
     map.addLayer({
         id: 'line',
         type: 'line',
-        source: 'line',
+        source: {
+            type: 'geojson',
+            data: {
+                type: 'Feature',
+                geometry: {
+                    type: 'LineString',
+                    coordinates: riverLines
+                }
+            }
+        },
         layout: {
             'line-join': 'round',
             'line-cap': 'round'
