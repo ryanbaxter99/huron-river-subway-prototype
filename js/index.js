@@ -148,15 +148,16 @@ const lakes = [
 ];
 
 // Adds a custom marker for each lake on the map
-const markers = lakes.map(lake => {
+lakes.forEach(lake => {
     const el = document.createElement('div');
     el.className = "marker " + lake.name;
-    return new mapboxgl.Marker(el)
+    new mapboxgl.Marker(el)
         .setLngLat([lake.lng, lake.lat])
         .setPopup(new mapboxgl.Popup().setHTML(lake.popup))
         .addTo(map);
 });
 
+// List of river lines to be plotted
 const riverLines = [
     // Starting point at Big Lake 
     [-83.51909881189316, 42.721293972977314], 
@@ -185,15 +186,6 @@ const riverLines = [
     // Ford Lake to Belleville Lake
     [-83.49774610909319, 42.213428101123355],
 ]
-
-map.on('zoom', () => {
-    markers.forEach(marker => {
-        const scale = 1 + (map.getZoom() - 8) * 0.4;
-        const element = marker.getElement().children[0];
-        element.style.transform = `scale(${scale})`
-        element.style.transformOrigin = 'bottom';
-    });
-});
 
 // Runs on map load
 map.on('load', () => {
