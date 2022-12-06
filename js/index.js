@@ -186,7 +186,6 @@ const riverLines = [
     [-83.49774610909319, 42.213428101123355],
 ]
 
-
 // Runs on map load - adds the lines to the map
 map.on('load', () => {
     map.addLayer({

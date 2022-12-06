@@ -63,37 +63,23 @@ lakes.forEach(lake => {
 });
 ```
 
-This is the border around the Huron River Watershed. They should not be adjusted.
-
-```
-const lineCoordinates = [
-    [-84, 42.3],        // southwest
-    [-83.85, 42.86],    // northwest
-    [-83.25, 42.81],    // northeast
-    [-83.36, 42.16],    // southeast
-    [-84, 42.3],        // back to start
-];
-```
-
-This is to render the border. Do not modify unless it breaks.
+This is responsible for any code that runs when the map loads. It renders the lines between each river. Do not modify unless it breaks.
 
 ```
 map.on('load', () => {
-    map.addSource('line', {
-        type: 'geojson',
-        data: {
-            type: 'Feature',
-            geometry: {
-                type: 'LineString',
-                coordinates: lineCoordinates
-            }
-        }
-    });
-
     map.addLayer({
         id: 'line',
         type: 'line',
-        source: 'line',
+        source: {
+            type: 'geojson',
+            data: {
+                type: 'Feature',
+                geometry: {
+                    type: 'LineString',
+                    coordinates: riverLines
+                }
+            }
+        },
         layout: {
             'line-join': 'round',
             'line-cap': 'round'

@@ -32,54 +32,68 @@ body {
 }
 
 /* Can specify CSS rules per lake to override the generic rules */
+
 .bigLake {
     width: 45px;
     height: 45px;
 }
+
 .pontiacLake {
     width: 75px;
     height: 75px;
-}   
+}
+
 .oxbowLake {
     width: 50px;
     height: 50px;
 }
+
 .cedarIslandLake {
     width: 40px;
     height: 40px;
 }
+
+
 .southCommerceLake {
     width: 35px;
     height: 35px;
 }
+
 .northCommerceLake {
     width: 40px;
     height: 40px;
 }
+
 .proudLake {
     width: 30px;
     height: 30px;
 }
+
 .hubbellPound {
     width: 25px;
     height: 25px;
 }
+
 .kentLake {
     width: 85px;
     height: 85px;
 }
+
 .baseLineLake {
     width: 60px;
     height: 60px;
 }
+
 .bartonPond {
     width: 40px;
     height: 40px;
 }
+
 .fordLake {
     width: 70px;
     height: 70px;
 }
+
 .bellevilleLake {
     width: 30px;
     height: 30px;
